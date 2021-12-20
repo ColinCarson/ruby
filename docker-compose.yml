@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  ruby-dev:
+    build:
+      context: /Users/colin/Projects/ruby/
+      dockerfile: rubybuild
+    container_name: ruby_dev
+    volumes:
+      - /Users/colin/Projects/ruby:/home/ruby
+    tty: true  
